@@ -1,0 +1,38 @@
+body{
+    font-family: 'Cabin', sans-serif;
+    background-color: #fff;
+    color:#3f4254;
+}
+*{
+    box-sizing: border-box;
+}
+.nav{
+    border-bottom: 1px solid #ebedf3;
+    padding-left: 250px;
+}
+.rounded{
+    border-radius: .85rem!important;
+    padding: 10px;
+}
+.sidenav{
+    height: 100%;
+    width: 250px;
+    padding-top: 13px;
+    border-right: 1px solid #ebedf3 ;
+}
+.sidenav_links{
+    padding: 15px;
+    padding-top: 45px ;
+    font-size: 20px;
+    list-style: none;
+}
+.sidenav_links a:hover{
+    background-color: #E4E6EF;
+    color: #f64e60;
+}
+.sidenav a {
+    padding: 15px;
+    transition: 0.3s;
+    color: #818181;
+}
+

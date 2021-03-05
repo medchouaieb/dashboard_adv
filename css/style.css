@@ -1,0 +1,366 @@
+body{
+            font-family: 'Cabin', sans-serif;
+            background-color: #fff;
+            color:#3f4254;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        .nav{
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            height: 80px;
+            border-bottom: 1px solid #ebedf3;
+            padding-left: 250px;
+        }
+
+        
+        .grid_container{
+            display: grid;
+            grid-template-columns: auto auto auto ;
+            grid-gap: 50px;
+            margin: 20px;
+        }
+        .achor_box{
+            color: inherit;
+        }
+        .achor_box:hover{
+            color: black;
+            text-decoration: none;
+        }
+        .box{
+            width: auto;
+            height: auto;
+            box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.18);
+            background-image: url('../icons/Advancia-Icon.png');
+            background-repeat:no-repeat;
+            background-position: bottom 8px right 5px;
+            background-size: 45px;
+            background-color: #c9f7f5;
+            padding: 5px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+
+        .box-sans{
+            width: auto;
+            height: auto;
+            box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.18);
+            display: inline-block;
+            background-color: white;
+            border : 3px black solid;
+            border-radius: 10px;
+            padding: 7px;
+            margin:20px;
+            width: 20%;
+        }
+        .box-sans h3{
+            display: inline-block;
+        }
+        .box h3{
+            display: inline-block;
+        }
+        
+
+        .badge_actif{
+            background: #c9f7f5;
+            color: #1bc5bd;
+            border-radius: 5px;
+            padding: 5px;
+            width: auto;
+            height: auto;
+            cursor: pointer;
+        }
+        .badge_ar_exp{
+            background: #fff4de;
+            color: #ffa800;
+            border-radius: 5px;
+            padding: 5px;
+            width: auto;
+            height: auto;
+            cursor: pointer;
+        }
+        .mini_card{
+            display: inline-block;
+            border-radius: 15px;
+            border : 1px gray solid;
+            margin: 5px;
+            
+        }
+        
+        .flex_1{
+           display: block;
+           font-size: 14px; 
+           padding: 5px;
+        }
+
+        
+        .left{
+            flex:1
+        }
+        .chart{
+            height: 300px;
+            width: 50%;
+            position: relative;
+            background-color: white;
+            margin-bottom: -200px;
+        }
+        .line_1{
+            width: 100%;
+            height: 1px;
+            font-size: 15px;
+            position: absolute;
+            background-color: white;
+            top: 25%;
+        }
+        .line_2{
+            width: 100%;
+            height: 1px;
+            font-size: 15px;
+            position: absolute;
+            background-color: white;
+            top: 50%;
+        }
+        .line_3{
+            width: 100%;
+            height: 1px;
+            font-size: 15px;
+            position: absolute;
+            background-color: white;
+            top: 75%;
+        }
+        
+
+        .chart_r{
+            width: 20px;
+            background-color: #DDD1EF;
+            border: 1px black solid;
+            position: absolute;
+            bottom: -1.5px;
+        }
+        .chart_r:after{
+            position: absolute;
+            bottom: -28px;
+            transform: rotate(90deg);
+            width: 15px;
+            }
+        .c_data_1{
+            left:26.3636363636px;
+            background-color: #D0CBFF;
+            animation : bar1 1.2s 0.1s forwards;
+        }
+        .c_data_1:after{
+            content: "mark";
+        }
+        .c_data_2{
+            left:62.7272727273px;
+            background-color:#8A81DA;
+            animation : bar2 1.2s 0.1s forwards;
+        }
+        .c_data_2:after{
+            content: "dddddd";
+        }
+        .c_data_3{
+            left:99.0909090909px;
+            background-color: #D3DA81;
+            animation : bar3 1.2s 0.1s forwards;
+        }
+        #myChart{
+            width: 70%;
+        }
+        
+        .c_data_3:after{
+            content: "";
+        }
+        .c_data_4{
+            left:135.4545454545px;
+            background-color: #DA8881;
+            animation : bar4 1.2s 0.1s forwards;
+        }
+        .c_data_4:after{
+            content: "mark";
+            }
+        .tooltiptext{
+            visibility: hidden;
+            width: 120px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            padding: 5px 0;
+            margin : 10px;
+            border-radius: 6px;
+            /* Position the tooltip text - see examples below! */
+            position: absolute;
+            z-index: 1;
+        }
+        /* Show the tooltip text when you mouse over the tooltip container */
+        .chart_r:hover .tooltiptext {
+            visibility: visible;
+        }
+        .activity_timeline{
+            background-color: #ffe2e5;
+            border-radius: 15px;
+            width: 30%;
+            flex: 0.5;
+            height: 350px;
+            padding-left: 10px;
+            margin-left: 10px;
+        }
+        .activity{
+            position: relative;
+            padding:15px;
+            border-left: 2px orange solid;
+            background-color: #ffe2e5;
+        }
+        .main{
+            display: flex;
+            flex-direction: column;
+            padding-left: 260px;
+            padding-right: 15px;
+            
+        }
+        footer{
+            margin-top: 15px;
+        }
+        .activity span{
+            display: block;
+            
+        }
+        .activity img{
+            position: absolute;
+            border-radius: 50%;
+            background-color: white;
+            left: 0;
+            transform: translate(-50%,50%);
+        }
+        .icons_activity{
+            margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+        }
+        @-webkit-keyframes bar1 {
+	        0% {
+		    height: 0px;
+	        }
+	        100% {
+		    height: 25%;
+	        }
+        }
+        @keyframes bar1 {
+	        0% {
+		    height: 0px;
+	        }
+	        100% {
+		    height: 25%;
+	        }
+        }
+        @-webkit-keyframes bar2 {
+	        0% {
+		    height: 0px;
+	        }
+	        100% {
+		    height: 50%;
+	        }
+        }
+        @keyframes bar2 {
+	        0% {
+		    height: 0px;
+	        }
+	        100% {
+		    height: 50%;
+	        }
+        }
+        @-webkit-keyframes bar3 {
+	        0% {
+		    height: 0px;
+	        }
+	        100% {
+		    height: 75%;
+	        }
+        }
+        @keyframes bar3 {
+	        0% {
+		    height: 0px;
+	        }
+	        100% {
+		    height: 75%;
+	        }
+        }
+        @-webkit-keyframes bar4 {
+	        0% {
+		    height: 0px;
+	        }
+	        100% {
+		    height: 100%;
+	        }
+        }
+        @keyframes bar4 {
+	        0% {
+		    height: 0px;
+	        }
+	        100% {
+		    height: 88%;
+	        }
+        }
+    .sidenav{
+        height: 100%;
+        width: 250px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background : white;
+        overflow-x: hidden;
+        padding-top: 13px;
+        transition: 0.5s;
+        border-right: 1px solid #ebedf3 ;
+    }
+    .sidenav_links{
+        padding: 15px;
+        padding-top: 45px ;
+        font-size: 20px;
+        
+    }
+    .sidenav_links>a:hover{
+        background-color: #E4E6EF;
+        color: #f64e60;
+    }
+    .sidenav a {
+        text-decoration: none;
+        display: block;
+        padding: 15px;
+        transition: 0.3s;
+        color: #818181;
+    }
+    .sidenav a:hover{
+
+    }
+    .closebtn{
+        position: absolute;
+        top:-35%;
+        right: 0;
+        font-size: 35px;
+    }
+    
+    .search{
+        background-color: #f3f6f9;
+        border-radius: .85rem!important;
+    }
+    table{
+        padding: 15px;
+        background-color: #f3f6f9;
+        margin: auto;
+        
+    }
+    table tr{
+        padding: 15px;
+        border: 1px solid #ebedf3;
+    }
+    table tr[scope="col"]{
+        text-align: start;
+    }
+    table th{
+        padding: 15px;
+        text-align: center;
+    }

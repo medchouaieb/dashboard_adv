@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .contacts{
+            display: flex;
+            flex-direction: row;
+        }
+        .card{
+    width: auto;
+    height: auto;
+    background-color: #c9f7f5;
+    padding: 10px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+.title{
+    display: flex;
+    flex-direction: row;
+}
+    </style>
+</head>
+<body>
+    <div class="sidenav">
+        <div style="position:relative;height: auto;">
+        <a href="./index.html"><img src="./icons/logo-light.png" alt="" style="margin-left: 5px;"></a>
+        <!--<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
+        </div>
+        <div class="sidenav_links">
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+        </div>
+    </div>
+    <div class="nav">
+        
+        <span style="font-size:30px;cursor:pointer;flex-shrink: 1;margin-left: 5px;" onclick="openNav()">&#9776</span>
+        
+        <div style="flex-grow: 1; margin: auto;display: flex;
+        justify-content: center;margin-left: 5rem;" >
+            <form method="get" class="search" style="width: 300px; padding:15px;">
+            <img src="./icons/search-24px.svg" alt="search">
+            <input type="text" placeholder="Chercher...." style="border: 0;background-color: transparent;border-radius: 0;outline: 0;width: 85%;margin: 0px;">
+            </form>
+        </div>
+        <div style="flex-grow: 1;display:flex;justify-content: flex-end;">
+
+        </div>
+        <span style="flex-grow: 1;display:flex;justify-content: flex-end; margin-right: 15px;">Caveo</span>        
+        
+    </div>
+    <div class="main">
+        <div class="contacts">
+            <div class="card">
+                <div class="title">
+                    <img src="./icons/avatar.png" alt="avatar" width="50">
+                    <span>Bassem Elfahem</span>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p style="text-align: center;">2021© <a href="https://www.advancia-itsystem.com/">Advancia</a></p>
+        </footer>
+    </div>
+</body>
+</html>
