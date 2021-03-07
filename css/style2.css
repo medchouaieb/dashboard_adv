@@ -15,10 +15,17 @@ body{
     padding: 10px;
 }
 .sidenav{
+    position: absolute;
     height: 100%;
     width: 250px;
     padding-top: 13px;
     border-right: 1px solid #ebedf3 ;
+}
+.nav-link{
+    color: #818181;
+}
+.btn-rounded{
+    border-radius: 10rem !important;
 }
 .sidenav_links{
     padding: 15px;
@@ -36,3 +43,7 @@ body{
     color: #818181;
 }
 
+.main{
+    padding-left: 260px;
+    padding-right: 15px;
+}

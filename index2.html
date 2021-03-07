@@ -9,33 +9,77 @@
     <!--Bootstrap css-->
     <link rel="stylesheet" href="./bootstrap-4.3.1-dist/css/bootstrap.min.css">
     <!--Js Bootstrap-->
-    
+    <link type="text/css" rel="stylesheet" href="./lightslider-master/dist/css/lightslider.css" />
 </head>
 <body>
-        <div class="navbar navbar-expand-lg bg-white nav" >
-            <button class="d-sm-inline navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="fas fa-bars fa-1x"></span>
+        <nav class="navbar navbar-expand-lg bg-light">
+          <div class="container-fluid justify-content-between">
+            <a class="navbar-brand" href="#"><img src="./icons/logo-light.png" alt="" style="margin-left: 5px;"></a>
+            <button class="navbar-toggler d-md-none" type="button" data-target="#navbarNav" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fas fa-bars"></i>
             </button>
+            <div class="collapse d-md-none" id="navbarNav" >
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a href="./contacts.html" class="nav-link">Contacts</a>
+                </li>
+                <li class="nav-item">
+                  <a href="./contacts.html" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a href="./contacts.html" class="nav-link">Client</a>
+                </li>
+              </ul>
+              <form action="get" class="input-group mt-2">
+                <input
+                  autocomplete="off"
+                  type="search"
+                  class="form-control rounded"
+                  placeholder="Search"
+                />
+                <span class="input-group-text border-0"
+                  ><i class="fas fa-search"></i
+                ></span>
+              </form>
+            </div>
+            <div class="d-none d-md-flex">
+              <form class="input-group w-auto my-auto">
+                <input
+                  autocomplete="off"
+                  type="search"
+                  class="form-control"
+                  placeholder="Search"
+                  style="min-width: 125px;"
+                />
+                <span class="input-group-text d-lg-flex"
+                  ><a style="color: #3b5998" href="#" role="button"><i class="fas fa-search" role="button"></i
+                ></a></span>
+              </form>
+            </div>
+            <div class="ml-sm-5 d-none d-md-flex">
+              <div class=" m-md-2">
+                <ul class="navbar-nav">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle d-flex align-items-center"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false" href="#">
+                      <img class="rounded-circle" src="./icons/avatar.png" width="30" alt="profile">
+                    </a>
+                    <ul class="dropdown-menu" id="navbarDropdown" style="position:absolute;">
+                      <li><a class="dropdown-item" href="#">My profile</a></li>
+                      <li><a class="dropdown-item" href="#">Settings</a></li>
+                      <li><a class="dropdown-item" href="#">Logout</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <button type="button" class="btn btn-success btn-rounded align-self-center">+Incident</button>
+            </div>
             
-            <a class="d-sm-block d-md-flex justify-content-center align-self-center navbar-brand" href="#">
-            <img src="./icons/logo-light.png" alt="" style="margin-left: 5px;"></a>
-            <form action="get" class="d-sm-block d-md-flex justify-content-center align-self-center" style="flex-grow: 1;
-            margin-top: 10px;" >
-                <div class="form-group bg-light rounded">
-                    <i class="fa fa-search" aria-hidden="true"></i>
-                    <input class="w-95" type="text" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Chercher..."
-                    style="border: 0;background-color: transparent;border-radius: 0;outline: 0;width: 85%;">
-                </div>
-            </form>
-            <div class="d-flex justify-content-end align-self-center" style="flex-grow: 1">
-            <div class="" style="justify-content: flex-end; ">
-                <button style="color: #1bc5bd;background-color: #c9f7f5;border-color: transparent;">+Incident</button>
-                <span>Caveo</span>
-            </div>
-            </div>
-
-        </div>
-            <div class="collapse  d-md-block bg-white overflow-hidden sidenav">
+          </div>
+        </nav>
+  
+        <!--Sidenav-->
+        
+            <div class="collapse d-sm-none d-md-block overflow-hidden  sidenav bg-light">
                 <ul class="sidenav_links">
                   <li class="nav-item">
                     <a class="nav-link" href="./contacts.html">Contacts <span class="sr-only">(current)</span></a>
@@ -48,9 +92,94 @@
                   </li>
                 </ul>
             </div>
+        <!--Sidenav-->
+        <!--Main-->
+        <main class="main">
+          <!-- Carousel wrapper -->
+<div id="carouselBasicExample" class="carousel slide carousel-fade" data-mdb-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-mdb-target="#carouselBasicExample" data-mdb-slide-to="0" class="active"></li>
+    <li data-mdb-target="#carouselBasicExample" data-mdb-slide-to="1"></li>
+    <li data-mdb-target="#carouselBasicExample" data-mdb-slide-to="2"></li>
+  </ol>
+
+  <!-- Inner -->
+  <div class="carousel-inner">
+    <!-- Single item -->
+    <div class="carousel-item active">
+      <img
+        src="https://mdbootstrap.com/img/Photos/Slides/img%20(15).jpg"
+        class="d-block w-100"
+        alt="..."
+      />
+      <div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      </div>
+    </div>
+
+    <!-- Single item -->
+    <div class="carousel-item">
+      <img
+        src="https://mdbootstrap.com/img/Photos/Slides/img%20(22).jpg"
+        class="d-block w-100"
+        alt="..."
+      />
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </div>
+
+    <!-- Single item -->
+    <div class="carousel-item">
+      <img
+        src="https://mdbootstrap.com/img/Photos/Slides/img%20(23).jpg"
+        class="d-block w-100"
+        alt="..."
+      />
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>
+          Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- Inner -->
+
+  <!-- Controls -->
+  <a
+    class="carousel-control-prev"
+    href="#carouselBasicExample"
+    role="button"
+    data-mdb-slide="prev"
+  >
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </a>
+  <a
+    class="carousel-control-next"
+    href="#carouselBasicExample"
+    role="button"
+    data-mdb-slide="next"
+  >
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </a>
+</div>
+<!-- Carousel wrapper -->
+        </main>
+        <!--Main-->
        
-    
-<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+
+<script>
+  const myCarousel = document.querySelector('#carouselBasicExample')
+const carousel = new mdb.Carousel(myCarousel)
+</script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="./lightslider-master/dist/css/lightslider.css"></script>
 <script src="./bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
 <script src="https://kit.fontawesome.com/97168c4c52.js" crossorigin="anonymous"></script>
 </body>
