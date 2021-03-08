@@ -47,3 +47,8 @@ body{
     padding-left: 260px;
     padding-right: 15px;
 }
+
+optgroup[label]{
+    color: #3f4254;
+    font-style: normal;
+}
